@@ -83,7 +83,10 @@ export default function Home() {
                 ))}
                   
                 </ul>
-                <button className="bg-sky-200 text-black text-lg p-4 mt-5 rounded-full w-full">Post</button>
+                <div className="mt-5 pr-9">
+                  <button className="bg-sky-200 text-black text-lg p-4 mt-5 rounded-full w-full">Post</button>
+                </div>
+                
             </div>
          </div>
         <div className="col-span-6 border-r-2 border-l-2 border-slate-500"></div>
