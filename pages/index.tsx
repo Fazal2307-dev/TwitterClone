@@ -11,19 +11,10 @@ import { CgProfile } from "react-icons/cg";
 import { CiCircleMore } from "react-icons/ci";
 import { IoIosPeople } from "react-icons/io";
 
-import { Geist, Geist_Mono } from "next/font/google";
 import FeedCard from "@/components/FeedCard";
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 interface TwitterSidebarButton {
   title:string;
   icon:React.ReactNode;
@@ -71,13 +62,13 @@ export default function Home() {
   return (
     <div>
       <div className="grid grid-cols-12 h-screen w-screen px-52 ">
-        <div className="col-span-3 pt-8 ">
+        <div className="col-span-3 pt-8  ">
           <div className="text-4xl h-fit hover:bg-gray-600 rounded-full p-1 cursor-pointer transition-all w-fit" >
             <FaXTwitter    />
           </div>
           <div className="mt-3 text-2xl font-semibold">
                 <ul> {sidebarMenuItems.map((item)=>(
-                    <li className="flex  justify-start items-center gap-4  hover:bg-gray-600  rounded-full px-3 py-2 w-fit cursor-pointer transition-all" key={item.title}>
+                    <li className="flex  justify-start items-center gap-4  hover:bg-gray-600  rounded-full p-4 px-3 py-2 w-fit cursor-pointer transition-all" key={item.title}>
                       <span>{item.icon}</span>
                       <span>{item.title}</span>
                     </li>
@@ -90,16 +81,22 @@ export default function Home() {
                 
             </div>
          </div>
-        <div className="col-span-6 border-r-2 border-l-2 border border-gray-600">
-          <FeedCard />
-           <FeedCard />
-           <FeedCard />
-           <FeedCard />
-           <FeedCard />
-           <FeedCard />
+        <div className="col-span-5 border-r-[1px] border-l-[1px] h-screen overflow-scroll  border-gray-600">
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
+            <FeedCard />
 
         </div>
-        <div className="col-span-3"></div>
+        <div className="col-span-4"></div>
       </div>
     </div>
   );
