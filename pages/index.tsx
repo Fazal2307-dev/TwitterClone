@@ -12,6 +12,7 @@ import { CiCircleMore } from "react-icons/ci";
 import { IoIosPeople } from "react-icons/io";
 
 import { Geist, Geist_Mono } from "next/font/google";
+import FeedCard from "@/components/FeedCard";
 
 
 const geistSans = Geist({
@@ -89,7 +90,15 @@ export default function Home() {
                 
             </div>
          </div>
-        <div className="col-span-6 border-r-2 border-l-2 border-slate-500"></div>
+        <div className="col-span-6 border-r-2 border-l-2 border border-gray-600">
+          <FeedCard />
+           <FeedCard />
+           <FeedCard />
+           <FeedCard />
+           <FeedCard />
+           <FeedCard />
+
+        </div>
         <div className="col-span-3"></div>
       </div>
     </div>
