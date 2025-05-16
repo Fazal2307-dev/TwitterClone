@@ -7,7 +7,7 @@ import { MdBarChart } from 'react-icons/md';
 const FeedCard:React.FC = () =>{
  return (
  <div className="border border-r-0 border-l-0 border-b-0 border-gray-600 p-4 hover:bg-slate-900 transition-all cursor-pointer ">
-      <div className="grid grid-cols-12">
+      <div className="grid grid-cols-12 gap-3">
           <div className="col-span-1">
             <Image className="rounded-full" src="https://pbs.twimg.com/profile_images/1791946761302659072/kun55vGC_400x400.jpg" alt="user-profile" 
              height={50} 
@@ -23,7 +23,7 @@ const FeedCard:React.FC = () =>{
               Felt like I wasted my whole life.<br />
               got into depression(existential crises in general)
             </p>
-            <div className='flex justify-evenly mt-5 text-xl item-center'>
+            <div className='flex justify-evenly mt-5 text-xl item-center  mr-4'>
               <div>
                 <BiMessageRounded />
               </div>
